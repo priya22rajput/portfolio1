@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html>
+     <head>
+           <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+           <title>Priya Portfolio</title>
+           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+           <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+           <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+           <link href="https://fonts.googleapis.com/css?family=oswald|raleway" rel="stylesheet">
+           <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+           <link rel="stylesheet" href="style.css">
+         <!--========================================================-->
+         <style>
+
+              body{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+              }
+             
+             .aboutImg {
+                border: 2px;
+                border-radius: 15px 50px;
+                margin-left: 120px;
+                 margin-top: 20px;
+             }
+             
+             .name {
+                font-size: 20px;
+                font-family: "Times New Roman", Times, serif;
+                 margin-top: 150px;
+             }
+             
+             h2 {
+                font-size: 30px;
+}
+             .title-name{
+                 font-size: 16px;
+                 margin-top: 44px;
+                 margin-bottom: 30px;
+             }
+
+             .contact100-form-btn{
+                 
+                 margin-bottom: 8px;
+             }
+      
+             
+             logo{
+                 overflow: visible;
+                 max-height: 80px;
+                 max-width: 100px;
+             }
+            
+             
+             header{
+                 background: linear-gradient(to top right, #ff0000 3%, #cc6699 91%);
+                 position: fixed;
+                 z-index: 100;
+                 top:0;
+                 left:0;
+                 height: 100px;
+                 width: 100%;
+                 color: black;
+                 padding: 35px 100px 20px;
+                 
+                 display: flex;
+                 justify-content: space-around;
+                 align-items: center;
+             }
+             
+             header a{
+                 text-decoration: none;
+                 color: white;
+                 opacity: .6;
+                 cursor: pointer;
+             }
+             
+             header a:hover{
+                 opacity: 1;
+             }
+             
+             header nav ul{
+                 font-size: 20px;
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: flex-end;
+             }
+             
+             header nav li{
+                 margin: 0 8px;
+             }
+             
+             
+             header nav li:first-child{
+                 margin-left: 0;
+             }
+             
+             
+             header nav li:last-child{
+                 margin-right: 0;
+             }
+             
+             #gallery ul.grid li{
+                 flex-basis: 30%;
+                 padding: 0 20px;
+                 margin-bottom: 40px;
+             }  
+             
+             @media(max-width:1000px){
+              
+               
+                 header{
+                   
+                     text-align: center;
+                     flex-direction: column;
+                     padding: 20px 10px;
+                 }
+                 
+                 header img{
+                     margin-top: 20px;
+                     height: 35px;
+                 }
+                 
+                 header nav{
+                     justify-content: space-around;
+                 }
+                 
+                 header h2{
+                     margin-bottom: 15px;
+                 }
+                
+                
+                 
+             }
+             
+             #get{
+                 background-color: #fafafa;
+                 padding: 48px;
+                 text-align: center;
+             }
+             
+             #get .potrait-photos{
+                 border-radius: 50%;
+                 border: 4px solid #2196f3;
+                 margin-bottom: 10px; 
+             }
+             
+             #get .potrait-photos:first-child{
+                 margin-top: 20px;
+             }
+             
+             #get .designer{
+                 font-size: 22px;
+                 font-weight: 400;
+                 line-height: 1.5;
+                 margin-bottom: 20px;
+                 padding: 0;
+             }
+             
+             #get .author{
+                 margin: 20px auto;
+             }
+            
+             #get .author:last-child{
+                 margin-bottom: 0;
+             }
+             
+             @media(max-width: 1000px){
+                 #get .designer{
+                  font-size: 18px;
+                   padding: 0 20px;  
+                 }
+                 
+                 #get .author{
+                font-size: 14px;
+             }
+             }  
+            .upperpanel{
+                background:linear-gradient(to right,rgb(242, 19, 175),rgb(173, 50, 108))
+            }  
+            @media only screen and (max-width: 1000px) 
+            {
+              #contrast{
+                max-height:30vh;
+              }
+              .potrait-photos{
+                margin-left:-25vw;
+                
+              }
+              .designer{
+                
+                width:90vw;
+                margin-left:-35vw;
+              }
+              .aboutImg{
+                margin-left:4vw;
+              }
+
+            }
+                    
+         </style>
+
+    </head>
+     <body id="top">
+         <header class="upperpanel">
+            <a class="logo" href="#" target="_blank"><img class="img-responsive" class="logo" src="Img/My-Logo.png" height="100px" width="auto" alt=""></a>
+               <nav >
+                   <ul >
+                   <li ><a href="#top" ><b>Home</b></a></li>
+                   <li><a href="#me" ><b>About</b></a></li>
+                   <li><a href="#gallery" ><b>Portfolio</b></a></li>
+                   <li><a href="#get" ><b>Inspiration</b></a></li>
+                   <li><a href="#contact" ><b>Contact</b></a></li>
+                   <li><a href="#social-media" ><b>Links</b></a></li>
+                  </ul> 
+             </nav>
+         </header>
+         
+      <body id="top">
+         <div id="hero">
+               <div class="background-img"></div>
+               <h1 class="name">PRIYA RAJPUT</h1>
+               <h2 class="title-name">Aspiring Graphic Designer</h2>
+              <div class="container-contact100-form-btn">
+            <a href="#me"> <button type="button" id="view-more-id" class="contact100-form-btn" style="background-color:rgb(242, 19, 175)" >View More</button></a>
+            
+             </div>
+             <div id="me"></div>
+              
+         
+         </div>
+         <!-- ******************************* -->
+         
+         <div id="about" style="width: fit">
+             <div class="row">
+                 <div class="about_column_1">
+                     <img class="aboutImg" src="Img/priyaa.png" height="350px" style="margin-top: 8vh;" >
+                 </div>
+                <div class="about_column_2">
+                 <h3 class="title" >About Me</h3>
+                    <div id="two-cols">
+                        <div class="about-bio" style="margin-top:10vh;">
+                            <p style="font-size:large;">I am a Graphic Designer. 
+                                As I believe in myself of being
+                                passionate and creative about
+                                designing, I am looking for good career growth opportunities where my talent and knowledge could be best subjected and utilized in order to deliver my best for the pride and passion for the organization and for personal growth.
+                                I have done Diploma In Graphic and Web Designing from Lisaa School of Design Bengaluru.</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <hr  style="width:200px">
+         </div>
+            <!-- ******************************* -->
+             <!--carousel-->
+             <div id="gallery" class="photo gallery">
+               <h3 class="title">Portfolio</h3>
+            <p>Some Of My Works Are Here</p>
+        </div>
+        <div class="container-sm container container-lg container-xl container-md">
+            <div id="carouselExampleCaptions" class="carousel " data-ride="carousel" >
+                <ol class="carousel-indicators  ">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="9"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="10"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="11"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="12"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="13"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="14"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="15"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="16"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="17"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="18"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="19"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="20"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="21"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="22"></li>
+                
+                
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active"   data-toggle="modal" data-target="#portfolioModal1">
+                    <img src="Img/3-fold brochure - frontview .png" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >THREE FOLD BROCHURE </h5>
+                      <p>Front View</p>
+                      <p>Made with Illustrator</p>
+                    </div>
+                  </div>
+                 
+                  
+                    <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal2">
+                    <img src="Img/3-fold brochure - backview .png" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >THREE FOLD BROCHURE</h5>
+                      <p>Back View view</p>
+                      <p>Made with Illustrator</p>
+                    </div>
+                  </div>
+                  
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal3">
+                    <img src="Img/Bottle packaging .jpg" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >Water Bottle Packaging</h5>
+                      <p>Made with Illustrator</p>
+                    </div>
+                  </div>
+                  <!-- decrease width -->
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal4">
+                    <img src="Img/Contrast composition (negative & positive).jpg" id="contrast" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >Contrast Composition</h5>
+                      <p>Sketch</p>
+                    </div>
+                  </div>
+                     <!-- decrease width -->
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal5">
+                    <img src="Img/Cover book.png" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >Cover Book</h5>
+                      <p>Made with Illustrator</p>
+                    </div>
+                  </div>
+                     <!-- decrease width -->
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal6">
+                    <img src="Img/depend (1).jpg" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                      <h5 >Psychology Color Theme</h5>
+                      <p>Sketch</p>
+                    </div>
+                  </div>
+                     <!-- decrease width -->
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal7">
+                    <img src="Img/depend (2).jpg" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >Analog Color Scheme </h5>
+                      <p>Sketch</p>
+                    </div>
+                  </div>
+                     <!-- decrease width -->
+                  <div class="carousel-item "data-toggle="modal" data-target="#portfolioModal8">
+                    <img src="Img/depend (3).jpg" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                      <h5 >Photo Fantasy</h5>
+                      <p>Made with photoshop</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal9">
+                    <img src="Img/DisadvantageJunkFood_new.png" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                      <h5 >Junk Food Poster</h5>
+                      <p>Made with photoshop</p>
+                    </div>
+                  </div>
+                   <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal10">
+                    <img src="Img/Asymmetrical color scheme.jpg" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >Assymetrical Color Scheme</h5>
+                      <p>Sketch</p>
+                      
+                    </div>
+                  </div> 
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal11">
+                    <img src="Img/Drawing (1).jpg" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >Sketch</h5>
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal12">
+                    <img src="Img/Drawing.jpg" style=" max-height: 80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                      <h5 >Sketch</h5>
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal13">
+                    <img src="Img/Emphasis composition .jpg" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >Emphasis Compositon</h5>
+                      <p>Sketch</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal14">
+                    <img src="Img/Mandala-art.jpg" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >Mandala Art</h5>
+                      <p>Made with Illustrator</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal15">
+                    <img src="Img/McDonalds.png" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >Mc. Donalds Advertisement Poster</h5>
+                      <p>Made with Photoshop</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal16">
+                    <img src="Img/mockup.png" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >Business Card</h5>
+                      <p>Made with Illustrator</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal17">
+                    <img src="Img/Music concert poster.jpg" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                      <h5 >Music Concert Poster</h5>
+                      <p>Made with Photoshop</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item"  data-toggle="modal" data-target="#portfolioModal18">
+                    <img src="Img/Photo fantasy.jpg"style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >Photo Fantasy</h5>
+                      <p>Made with photoshop</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal19">
+                    <img src="Img/Photo fantasy_1.jpg" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                      <h5 >Photo Fantasy</h5>
+                      <p>Made with photoshop</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal20">
+                    <img src="Img/barbi00.jpg" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >Vector Art</h5>
+                      <p>Made with Illustrator</p>
+                    </div> 
+                  </div>
+                  <div class="carousel-item " data-toggle="modal" data-target="#portfolioModal21">
+                    <img src="Img/Psychology color theme - evil.jpg" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                      <h5 >Psychology Color Theme</h5>
+                      <p>Made with Sketch</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-toggle="modal" data-target="#portfolioModal22">
+                    <img src="Img/Word cloud.jpg" style="max-height:80vh;" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                      <h5 >Word Cloud</h5>
+                      <p>Made with Illustrator</p>
+                    </div>
+                  </div>
+                  
+                     
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          <!--carousel finish-->
+            <!-- ******************************* -->
+         <div id="get" class= "container">
+             <div id="two-cols">
+                <div id="get" class="about-get">
+              <h3  class="title">Inspiration</h3>
+                    <p class="potrait"><img  src="img/Paula Scher.jpg" alt="Paula Scher" class="potrait-photos"></p>  
+                    <p class="designer">&ldquo;"My work is play.And I play when I design. I even looked it up in the dictionary, to make sure that I actually do that, and the definition of 'play', number one, was 'engaging in a childlike activity or endeavor', and number two was 'gambling'. And I realized I do both when i'm designing".&ldquo;</p>
+                    <p class="author">&ndash; <b>Paula Scher</b></p>
+                    </div>
+                 <p>&nbsp;</p>
+             </div>
+             
+         </div>
+         
+         
+  <!-- ******************************** -->
+
+	<div id="contact" class="container-contact100">
+		<div class="contact100-map"></div>
+
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">`
+				<span class="contact100-form-title">
+					Contact Us
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Please enter your name">
+					<input class="input100" type="text" name="name" placeholder="Full Name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Please enter email: e@a.x">
+					<input class="input100" type="text" name="email" placeholder="Email">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Please enter your message">
+					<textarea class="input100" name="message" placeholder="Your Message"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						Send Email
+					</button>
+				</div>
+			</form>
+
+			<div class="contact100-more">
+				Contact no: <span class="contact100-more-highlight">+91 8871515129</span>
+			</div>
+		</div>
+	</div>
+         
+         
+<!-- ******************************** -->  
+             
+         
+    <footer id="social-media" class="footer">
+        <ul>
+            <li><a href="https://www.linkedin.com/jobs/search/?geoId=&keywords=&location=" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/priya.rajput.1426" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/virtuosity2020?r=nametag" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.behance.net/priyarajpu96cb"target="_blank"><i class="fab fa-behance"></i></a></li>
+        </ul>
+    </footer>
+
+
+     <!-- Portfolio Modals -->
+
+            <!-- Portfolio Modal 1 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
+              aria-labelledby="portfolioModal1Label" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <i class="fas fa-times"></i>
+                    </span>
+                  </button>
+                  <div class="modal-body text-center">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <!-- Portfolio Modal - Title -->
+                          <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">THREE FOLD BROCHURE FRONT</h2>
+                          <!-- Icon Divider -->
+                          <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            
+                            <div class="divider-custom-line"></div>
+                          </div>
+                          <!-- Portfolio Modal - Image -->
+                          <img class="img-fluid rounded mb-5" src="Img/3-fold brochure - frontview .png" alt="">
+                          <!-- Portfolio Modal - Text -->
+                          <p class="mb-5">THREE FOLD BROCHURE </p>
+                          <button class="btn btn-primary" href="#" data-dismiss="modal">
+                            <i class="fas fa-times fa-fw"></i>
+                            Close Window
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Portfolio Modal 2 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
+              aria-labelledby="portfolioModal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <i class="fas fa-times"></i>
+                    </span>
+                  </button>
+                  <div class="modal-body text-center">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <!-- Portfolio Modal - Title -->
+                          <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> THREE FOLD BROCHURE BACK</h2>
+                          <!-- Icon Divider -->
+                          <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            
+                            <div class="divider-custom-line"></div>
+                          </div>
+                          <!-- Portfolio Modal - Image -->
+                          <img class="img-fluid rounded mb-5" src="Img/3-fold brochure - backview .png" alt="">
+                          <!-- Portfolio Modal - Text -->
+                        
+                          <button class="btn btn-primary" href="#" data-dismiss="modal">
+                            <i class="fas fa-times fa-fw"></i>
+                            Close Window
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Portfolio Modal 3 -->
+             <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
+             aria-labelledby="portfolioModal2Label" aria-hidden="true">
+             <div class="modal-dialog modal-xl" role="document">
+               <div class="modal-content">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">
+                     <i class="fas fa-times"></i>
+                   </span>
+                 </button>
+                 <div class="modal-body text-center">
+                   <div class="container">
+                     <div class="row justify-content-center">
+                       <div class="col-lg-8">
+                         <!-- Portfolio Modal - Title -->
+                         <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> BOTTLE PACKAGING</h2>
+                         <!-- Icon Divider -->
+                         <div class="divider-custom">
+                           <div class="divider-custom-line"></div>
+                           
+                           <div class="divider-custom-line"></div>
+                         </div>
+                         <!-- Portfolio Modal - Image -->
+                         <img class="img-fluid rounded mb-5" src="Img/Bottle packaging .jpg" alt="">
+                         <!-- Portfolio Modal - Text -->
+                         <p class="mb-5">BOTTLE PACKAGING</p>
+                         <button class="btn btn-primary" href="#" data-dismiss="modal">
+                           <i class="fas fa-times fa-fw"></i>
+                           Close Window
+                         </button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+            <!-- Portfolio Modal 4 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
+              aria-labelledby="portfolioModal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <i class="fas fa-times"></i>
+                    </span>
+                  </button>
+                  <div class="modal-body text-center">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <!-- Portfolio Modal - Title -->
+                          <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> CONTRAST COMPOSITION</h2>
+                          <!-- Icon Divider -->
+                          <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            
+                            <div class="divider-custom-line"></div>
+                          </div>
+                          <!-- Portfolio Modal - Image -->
+                          <img class="img-fluid rounded mb-5" src="Img/Contrast composition (negative & positive).jpg" alt="">
+                          <!-- Portfolio Modal - Text -->
+                          
+                          <button class="btn btn-primary" href="#" data-dismiss="modal">
+                            <i class="fas fa-times fa-fw"></i>
+                            Close Window
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Portfolio Modal 5 -->
+             <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
+             aria-labelledby="portfolioModal2Label" aria-hidden="true">
+             <div class="modal-dialog modal-xl" role="document">
+               <div class="modal-content">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">
+                     <i class="fas fa-times"></i>
+                   </span>
+                 </button>
+                 <div class="modal-body text-center">
+                   <div class="container">
+                     <div class="row justify-content-center">
+                       <div class="col-lg-8">
+                         <!-- Portfolio Modal - Title -->
+                         <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> BOOK COVER</h2>
+                         <!-- Icon Divider -->
+                         <div class="divider-custom">
+                           <div class="divider-custom-line"></div>
+                           
+                           <div class="divider-custom-line"></div>
+                         </div>
+                         <!-- Portfolio Modal - Image -->
+                         <img class="img-fluid rounded mb-5" src="Img/Cover book.png" alt="">
+                         <!-- Portfolio Modal - Text -->
+                         
+                         <button class="btn btn-primary" href="#" data-dismiss="modal">
+                           <i class="fas fa-times fa-fw"></i>
+                           Close Window
+                         </button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+            <!-- Portfolio Modal 2 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
+              aria-labelledby="portfolioModal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <i class="fas fa-times"></i>
+                    </span>
+                  </button>
+                  <div class="modal-body text-center">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <!-- Portfolio Modal - Title -->
+                          <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">psychology color theme</h2>
+                          <!-- Icon Divider -->
+                          <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            
+                            <div class="divider-custom-line"></div>
+                          </div>
+                          <!-- Portfolio Modal - Image -->
+                          <img class="img-fluid rounded mb-5" src="Img/depend (1).jpg" alt="">
+                          <!-- Portfolio Modal - Text -->
+                       
+                          <button class="btn btn-primary" href="#" data-dismiss="modal">
+                            <i class="fas fa-times fa-fw"></i>
+                            Close Window
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Portfolio Modal 2 -->
+             <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog"
+             aria-labelledby="portfolioModal2Label" aria-hidden="true">
+             <div class="modal-dialog modal-xl" role="document">
+               <div class="modal-content">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">
+                     <i class="fas fa-times"></i>
+                   </span>
+                 </button>
+                 <div class="modal-body text-center">
+                   <div class="container">
+                     <div class="row justify-content-center">
+                       <div class="col-lg-8">
+                         <!-- Portfolio Modal - Title -->
+                         <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> Analog Color Scheme</h2>
+                         <!-- Icon Divider -->
+                         <div class="divider-custom">
+                           <div class="divider-custom-line"></div>
+                           
+                           <div class="divider-custom-line"></div>
+                         </div>
+                         <!-- Portfolio Modal - Image -->
+                         <img class="img-fluid rounded mb-5" src="Img/depend (2).jpg" alt="">
+                         <!-- Portfolio Modal - Text -->
+                     
+                         <button class="btn btn-primary" href="#" data-dismiss="modal">
+                           <i class="fas fa-times fa-fw"></i>
+                           Close Window
+                         </button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+            <!-- Portfolio Modal 2 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog"
+              aria-labelledby="portfolioModal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <i class="fas fa-times"></i>
+                    </span>
+                  </button>
+                  <div class="modal-body text-center">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <!-- Portfolio Modal - Title -->
+                          <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Photo Fantasy</h2>
+                          <!-- Icon Divider -->
+                          <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            
+                            <div class="divider-custom-line"></div>
+                          </div>
+                          <!-- Portfolio Modal - Image -->
+                          <img class="img-fluid rounded mb-5" src="Img/depend (3).jpg" alt="">
+                          <!-- Portfolio Modal - Text -->
+                 
+                          <button class="btn btn-primary" href="#" data-dismiss="modal">
+                            <i class="fas fa-times fa-fw"></i>
+                            Close Window
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Portfolio Modal 9 -->
+             <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog"
+             aria-labelledby="portfolioModal2Label" aria-hidden="true">
+             <div class="modal-dialog modal-xl" role="document">
+               <div class="modal-content">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">
+                     <i class="fas fa-times"></i>
+                   </span>
+                 </button>
+                 <div class="modal-body text-center">
+                   <div class="container">
+                     <div class="row justify-content-center">
+                       <div class="col-lg-8">
+                         <!-- Portfolio Modal - Title -->
+                         <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">JUNK FOOD POSTER</h2>
+                         <!-- Icon Divider -->
+                         <div class="divider-custom">
+                           <div class="divider-custom-line"></div>
+                           
+                           <div class="divider-custom-line"></div>
+                         </div>
+                         <!-- Portfolio Modal - Image -->
+                         <img class="img-fluid rounded mb-5" src="Img/DisadvantageJunkFood_new.png" alt="">
+                         <!-- Portfolio Modal - Text -->
+                        
+                         <button class="btn btn-primary" href="#" data-dismiss="modal">
+                           <i class="fas fa-times fa-fw"></i>
+                           Close Window
+                         </button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+            <!-- Portfolio Modal 2 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog"
+              aria-labelledby="portfolioModal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <i class="fas fa-times"></i>
+                    </span>
+                  </button>
+                  <div class="modal-body text-center">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <!-- Portfolio Modal - Title -->
+                          <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Assymetrical COLOR SCHEME</h2>
+                          <!-- Icon Divider -->
+                          <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            
+                            <div class="divider-custom-line"></div>
+                          </div>
+                          <!-- Portfolio Modal - Image -->
+                          <img class="img-fluid rounded mb-5" src="Img/Asymmetrical color scheme.jpg" alt="">
+                          <!-- Portfolio Modal - Text -->
+                      
+                          <button class="btn btn-primary" href="#" data-dismiss="modal">
+                            <i class="fas fa-times fa-fw"></i>
+                            Close Window
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Portfolio Modal 11 -->
+             <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog"
+             aria-labelledby="portfolioModal2Label" aria-hidden="true">
+             <div class="modal-dialog modal-xl" role="document">
+               <div class="modal-content">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">
+                     <i class="fas fa-times"></i>
+                   </span>
+                 </button>
+                 <div class="modal-body text-center">
+                   <div class="container">
+                     <div class="row justify-content-center">
+                       <div class="col-lg-8">
+                         <!-- Portfolio Modal - Title -->
+                         <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> SKETCH</h2>
+                         <!-- Icon Divider -->
+                         <div class="divider-custom">
+                           <div class="divider-custom-line"></div>
+                           
+                           <div class="divider-custom-line"></div>
+                         </div>
+                         <!-- Portfolio Modal - Image -->
+                         <img class="img-fluid rounded mb-5" src="Img/Drawing (1).jpg" alt="">
+                         <!-- Portfolio Modal - Text -->
+                        
+                         <button class="btn btn-primary" href="#" data-dismiss="modal">
+                           <i class="fas fa-times fa-fw"></i>
+                           Close Window
+                         </button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+            <!-- Portfolio Modal 12 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog"
+              aria-labelledby="portfolioModal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <i class="fas fa-times"></i>
+                    </span>
+                  </button>
+                  <div class="modal-body text-center">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <!-- Portfolio Modal - Title -->
+                          <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> SKETCH</h2>
+                          <!-- Icon Divider -->
+                          <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            
+                            <div class="divider-custom-line"></div>
+                          </div>
+                          <!-- Portfolio Modal - Image -->
+                          <img class="img-fluid rounded mb-5" src="Img/Drawing.jpg" alt="">
+                          <!-- Portfolio Modal - Text -->
+                          
+                          <button class="btn btn-primary" href="#" data-dismiss="modal">
+                            <i class="fas fa-times fa-fw"></i>
+                            Close Window
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Portfolio Modal 13 -->
+             <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog"
+             aria-labelledby="portfolioModal2Label" aria-hidden="true">
+             <div class="modal-dialog modal-xl" role="document">
+               <div class="modal-content">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">
+                     <i class="fas fa-times"></i>
+                   </span>
+                 </button>
+                 <div class="modal-body text-center">
+                   <div class="container">
+                     <div class="row justify-content-center">
+                       <div class="col-lg-8">
+                         <!-- Portfolio Modal - Title -->
+                         <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> EMPHASIS COMPOSITION</h2>
+                         <!-- Icon Divider -->
+                         <div class="divider-custom">
+                           <div class="divider-custom-line"></div>
+                           
+                           <div class="divider-custom-line"></div>
+                         </div>
+                         <!-- Portfolio Modal - Image -->
+                         <img class="img-fluid rounded mb-5" src="Img/Emphasis composition .jpg" alt="">
+                         <!-- Portfolio Modal - Text -->
+                         
+                         <button class="btn btn-primary" href="#" data-dismiss="modal">
+                           <i class="fas fa-times fa-fw"></i>
+                           Close Window
+                         </button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+            <!-- Portfolio Modal 14 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog"
+              aria-labelledby="portfolioModal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <i class="fas fa-times"></i>
+                    </span>
+                  </button>
+                  <div class="modal-body text-center">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <!-- Portfolio Modal - Title -->
+                          <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> MANDALA ART</h2>
+                          <!-- Icon Divider -->
+                          <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            
+                            <div class="divider-custom-line"></div>
+                          </div>
+                          <!-- Portfolio Modal - Image -->
+                          <img class="img-fluid rounded mb-5" src="Img/Mandala-art.jpg" alt="">
+                          <!-- Portfolio Modal - Text -->
+                          
+                          <button class="btn btn-primary" href="#" data-dismiss="modal">
+                            <i class="fas fa-times fa-fw"></i>
+                            Close Window
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Portfolio Modal 15 -->
+             <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog"
+             aria-labelledby="portfolioModal2Label" aria-hidden="true">
+             <div class="modal-dialog modal-xl" role="document">
+               <div class="modal-content">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">
+                     <i class="fas fa-times"></i>
+                   </span>
+                 </button>
+                 <div class="modal-body text-center">
+                   <div class="container">
+                     <div class="row justify-content-center">
+                       <div class="col-lg-8">
+                         <!-- Portfolio Modal - Title -->
+                         <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Mc. DONALDS ADVERTISEMENT</h2>
+                         <!-- Icon Divider -->
+                         <div class="divider-custom">
+                           <div class="divider-custom-line"></div>
+                           
+                           <div class="divider-custom-line"></div>
+                         </div>
+                         <!-- Portfolio Modal - Image -->
+                         <img class="img-fluid rounded mb-5" src="Img/McDonalds.png" alt="">
+                         <!-- Portfolio Modal - Text -->
+                         
+                         <button class="btn btn-primary" href="#" data-dismiss="modal">
+                           <i class="fas fa-times fa-fw"></i>
+                           Close Window
+                         </button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+            <!-- Portfolio Modal 16 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog"
+              aria-labelledby="portfolioModal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <i class="fas fa-times"></i>
+                    </span>
+                  </button>
+                  <div class="modal-body text-center">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <!-- Portfolio Modal - Title -->
+                          <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">BUSINESS CARD</h2>
+                          <!-- Icon Divider -->
+                          <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            
+                            <div class="divider-custom-line"></div>
+                          </div>
+                          <!-- Portfolio Modal - Image -->
+                          <img class="img-fluid rounded mb-5" src="Img/mockup.png" alt="">
+                          <!-- Portfolio Modal - Text -->
+                        
+                          <button class="btn btn-primary" href="#" data-dismiss="modal">
+                            <i class="fas fa-times fa-fw"></i>
+                            Close Window
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Portfolio Modal 17 -->
+             <div class="portfolio-modal modal fade" id="portfolioModal17" tabindex="-1" role="dialog"
+             aria-labelledby="portfolioModal2Label" aria-hidden="true">
+             <div class="modal-dialog modal-xl" role="document">
+               <div class="modal-content">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">
+                     <i class="fas fa-times"></i>
+                   </span>
+                 </button>
+                 <div class="modal-body text-center">
+                   <div class="container">
+                     <div class="row justify-content-center">
+                       <div class="col-lg-8">
+                         <!-- Portfolio Modal - Title -->
+                         <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> MUSIC CONCERT</h2>
+                         <!-- Icon Divider -->
+                         <div class="divider-custom">
+                           <div class="divider-custom-line"></div>
+                           
+                           <div class="divider-custom-line"></div>
+                         </div>
+                         <!-- Portfolio Modal - Image -->
+                         <img class="img-fluid rounded mb-5" src="Img/Music concert poster.jpg" alt="">
+                         <!-- Portfolio Modal - Text -->
+                        
+                         <button class="btn btn-primary" href="#" data-dismiss="modal">
+                           <i class="fas fa-times fa-fw"></i>
+                           Close Window
+                         </button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+            <!-- Portfolio Modal 18 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal18" tabindex="-1" role="dialog"
+             aria-labelledby="portfolioModal2Label" aria-hidden="true">
+             <div class="modal-dialog modal-xl" role="document">
+               <div class="modal-content">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">
+                     <i class="fas fa-times"></i>
+                   </span>
+                 </button>
+                 <div class="modal-body text-center">
+                   <div class="container">
+                     <div class="row justify-content-center">
+                       <div class="col-lg-8">
+                         <!-- Portfolio Modal - Title -->
+                         <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> MUSIC CONCERT</h2>
+                         <!-- Icon Divider -->
+                         <div class="divider-custom">
+                           <div class="divider-custom-line"></div>
+                           
+                           <div class="divider-custom-line"></div>
+                         </div>
+                         <!-- Portfolio Modal - Image -->
+                         <img class="img-fluid rounded mb-5" src="Img/Photo fantasy.jpg" alt="">
+                         <!-- Portfolio Modal - Text -->
+                        
+                         <button class="btn btn-primary" href="#" data-dismiss="modal">
+                           <i class="fas fa-times fa-fw"></i>
+                           Close Window
+                         </button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+            
+             <!-- Portfolio Modal 19 -->
+             <div class="portfolio-modal modal fade" id="portfolioModal19" tabindex="-1" role="dialog"
+             aria-labelledby="portfolioModal2Label" aria-hidden="true">
+             <div class="modal-dialog modal-xl" role="document">
+               <div class="modal-content">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">
+                     <i class="fas fa-times"></i>
+                   </span>
+                 </button>
+                 <div class="modal-body text-center">
+                   <div class="container">
+                     <div class="row justify-content-center">
+                       <div class="col-lg-8">
+                         <!-- Portfolio Modal - Title -->
+                         <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> PHOTO FANTASY</h2>
+                         <!-- Icon Divider -->
+                         <div class="divider-custom">
+                           <div class="divider-custom-line"></div>
+                           
+                           <div class="divider-custom-line"></div>
+                         </div>
+                         <!-- Portfolio Modal - Image -->
+                         <img class="img-fluid rounded mb-5" src="Img/Photo fantasy_1.jpg" alt="">
+                         <!-- Portfolio Modal - Text -->
+                         
+                         <button class="btn btn-primary" href="#" data-dismiss="modal">
+                           <i class="fas fa-times fa-fw"></i>
+                           Close Window
+                         </button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+            <!-- Portfolio Modal 20 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal20" tabindex="-1" role="dialog"
+              aria-labelledby="portfolioModal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <i class="fas fa-times"></i>
+                    </span>
+                  </button>
+                  <div class="modal-body text-center">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <!-- Portfolio Modal - Title -->
+                          <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> VECTOR ART</h2>
+                          <!-- Icon Divider -->
+                          <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            
+                            <div class="divider-custom-line"></div>
+                          </div>
+                          <!-- Portfolio Modal - Image -->
+                          <img class="img-fluid rounded mb-5" src="Img/barbi00.jpg" alt="">
+                          <!-- Portfolio Modal - Text -->
+                         
+                          <button class="btn btn-primary" href="#" data-dismiss="modal">
+                            <i class="fas fa-times fa-fw"></i>
+                            Close Window
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Portfolio Modal 21 -->
+             <div class="portfolio-modal modal fade" id="portfolioModal21" tabindex="-1" role="dialog"
+             aria-labelledby="portfolioModal2Label" aria-hidden="true">
+             <div class="modal-dialog modal-xl" role="document">
+               <div class="modal-content">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">
+                     <i class="fas fa-times"></i>
+                   </span>
+                 </button>
+                 <div class="modal-body text-center">
+                   <div class="container">
+                     <div class="row justify-content-center">
+                       <div class="col-lg-8">
+                         <!-- Portfolio Modal - Title -->
+                         <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> PSYCHOLOGY COLOR THEME</h2>
+                         <!-- Icon Divider -->
+                         <div class="divider-custom">
+                           <div class="divider-custom-line"></div>
+                           
+                           <div class="divider-custom-line"></div>
+                         </div>
+                         <!-- Portfolio Modal - Image -->
+                         <img class="img-fluid rounded mb-5" src="Img/Psychology color theme - evil.jpg" alt="">
+                         <!-- Portfolio Modal - Text -->
+                       
+                         <button class="btn btn-primary" href="#" data-dismiss="modal">
+                           <i class="fas fa-times fa-fw"></i>
+                           Close Window
+                         </button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+            <!-- Portfolio Modal 22-->
+            <div class="portfolio-modal modal fade" id="portfolioModal22" tabindex="-1" role="dialog"
+              aria-labelledby="portfolioModal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <i class="fas fa-times"></i>
+                    </span>
+                  </button>
+                  <div class="modal-body text-center">
+                    <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                          <!-- Portfolio Modal - Title -->
+                          <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> WORD CLOUD</h2>
+                          <!-- Icon Divider -->
+                          <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            
+                            <div class="divider-custom-line"></div>
+                          </div>
+                          <!-- Portfolio Modal - Image -->
+                          <img class="img-fluid rounded mb-5" src="Img/Word cloud.jpg" alt="">
+                          <!-- Portfolio Modal - Text -->
+                          
+                          <button class="btn btn-primary" href="#" data-dismiss="modal">
+                            <i class="fas fa-times fa-fw"></i>
+                            Close Window
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+</body>
+</html>
